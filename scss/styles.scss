@@ -4,10 +4,10 @@
 
 @import "small";
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 35rem) {
     @import "medium";
 }
 
-@media only screen and  (min-width: 900px)  {
+@media only screen and  (min-width: 60rem)  {
     @import "large";
 }
