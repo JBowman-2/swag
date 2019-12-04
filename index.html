@@ -15,14 +15,37 @@
     
     <header class="clearfix">
         <figure class="logo">
-            <img src="images/logoD.png" alt="logo" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+            
         </figure>
             <h1>Julien's  </h1>
             <h2>Elegant Eats</h2>
     </header>
     
-   
     
+    <nav class="clearfix"> 
+
+            <button id="hamburgerBtn">
+                    <span><i>&equiv;</i>OPEN</span>
+                    <span><i>&otimes;</i>CLOSE</span>
+            </button> 
+
+            <ul id="primaryNav">
+                    <li><a href="#">New</a></li>
+                    <li class="active"><a href="#">Used</a></li>
+                    <li><a href="#">Sales</a></li>
+                        <li class="parent"><a href="#">Service</a>
+                            <ul>
+                                <li><a href="#">Oil Change</a></li>
+                                <li><a href="#">Front End Alignment</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="#">Request an Appointment</a></li>
+            </ul>
+    </nav>
+
+
+   
+    <!--
     <nav class="clearfix">
         <ul>
             <li><a href="#">Menu</a></li>
@@ -31,6 +54,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    -->
    
 
     <main class="clearfix">
@@ -43,6 +67,17 @@
             &copy; 2019 Josh Bowman • Login
     </footer>
     
+   <script>
+    function toggleMenu() {
+        document.getElementById("hamburgerBtn").classList.toggle("open");
+        document.getElementById("primaryNav").classList.toggle("open");
+    }
+    var x = document.getElementById('hamburgerBtn');
+    x.onclick = toggleMenu; 
+
+    </script>
+    
+  
     
 </body>
 </html>
