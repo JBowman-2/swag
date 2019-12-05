@@ -15,6 +15,7 @@
     
     <header class="clearfix">
         <figure class="logo">
+            <img src="images/logo.png" alt="logo">
             
         </figure>
             <h1>Julien's  </h1>
@@ -58,8 +59,82 @@
    
 
     <main class="clearfix">
-
+                    <h1>KING B's Dutchoven Cook Book</h1>
+                    <p class="tag">To Cook like the KING.., you need to have his full set of directions </p>
+                    
+                    <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="mail" class="book">
+                        
+                 <!-- Personal Information -->
+                        
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>
+                                <span>Full Name</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
+                            
+                            <label>
+                                <span>Email Address</span><input type="email" name="email" placeholder="user@somewhere.com" required class="info">
+                            </label>
+                            
+                            <label>
+                                <span>Phone Number</span><input type="tel" name="phone" placeholder="111-222-3333" pattern="[0-9-. ]{10,14}" class="info">
+                            </label>
+                            
+                        
+                        </fieldset>
+                        
+                        
+                <!-- Shipping & Billing Information -->
+                        
+                        <fieldset>
+                            <legend>Shipping & Billing Information</legend>
+                            <label>
+                                <span>Full Name</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
+                            
+                            <label>
+                                <span>Shipping/Billing Address</span><input type="text" name="address" placeholder="Your Full Address" required class="info">
+                            </label>
+                            
+                         
+                            <label>
+                                <span>Credit Card Type</span>
+                                <select name="creditcard" class="credit">
+                                    <option value="visa">Visa</option>
+                                    <option value="master">Mastercard</option>
+                                    <option value="discover">Discover Card</option>
+                                    <option value="american">American Express</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        
+                        
+                 <!-- Future Information -->
+                        
+                        <fieldset>
+                            <legend>Account Information</legend>
+                            
+                            <span>Which information would you like to be notified about in the future?</span>
+                            <label><input type="checkbox" name="promotions" value="promotions" > Future Promotions </label><br>
+                            <label><input type="checkbox" name="videos" value="videos"> How to Videos </label><br>
+                            <label><input type="checkbox" name="recipes" value="recipes"> New Recipes </label>
+                            
+                            
+                            <span>Would you like this information to be sent to you by email? </span>
+                            <label><input type="radio" name="option" value="yes"> Yes </label><br>
+                            <label><input type="radio" name="option" value="no"> No </label>
+                            
+                            <label><span>What are some of your favorite dutchoven meals?</span><textarea  name="favorite" class="favorite"></textarea></label>
                 
+                         </fieldset>
+                        
+                        <input type="submit" value="Purchase Cook Book" class="purchase">
+                        
+                        <input Type="hidden" name="subject" value="Cook Book Purchase">
+                        
+                        <input Type="hidden" name="redirect" value="thanks.html">
+                    
+                    </form>
     </main>
 
 
