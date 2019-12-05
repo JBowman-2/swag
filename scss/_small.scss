@@ -184,7 +184,7 @@ main h1.thanks {
 
 
 
-form.book fieldset {
+form.bling fieldset {
     font-size: .9rem;
     margin-bottom: 1rem;
     margin-left: 2%;
@@ -193,12 +193,12 @@ form.book fieldset {
     border-radius: 10px;
   }
 
-form.book legend {
+form.bling legend {
   font-size: .8rem;
   font-weight: 700;
  
 }
-form.book span {
+form.bling span {
 color: $primaryColor;
 font-weight: 700;
 display: block;
@@ -206,28 +206,28 @@ padding: .8rem 0 2px .2rem;
 }
 
 
-form.book .info {
+form.bling .info {
  color: red;
  border-radius: .3rem;
  padding: .4rem;
  width: 40%;
 }
 
-form.book .credit {
+form.bling .credit {
  border-radius: .3rem;
  width: 40%;
  height: 25px;
 
 }
 
-form.book .favorite {
+form.bling .favorite {
      border-radius: .3rem;
      padding: .4rem;
      width: 40%;
      height: 100px;
    }
 
-form.book .purchase { 
+form.bling .purchase { 
      font-size: 1rem;
      font-weight: 700;
      background: linear-gradient(to bottom, #FAE5C1 0%, $subColor 100%);
@@ -240,7 +240,7 @@ form.book .purchase {
      color: $primaryColor;
    }
 
-form.book .purchase:hover {
+form.bling .purchase:hover {
         color: white;	
         background: #1F69AD;
       }
