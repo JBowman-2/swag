@@ -14,7 +14,7 @@ body {
 /* header */
 
 header {
-    background-color: lightgray;
+    background: linear-gradient(to top, rgb(221, 220, 221) 25%, rgb(110, 110, 110) 100%);
     padding: .5rem $gutter;
     margin: 0px;
     color: white;
@@ -63,7 +63,7 @@ header h2 {
 
 
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 35rem) {
 
 
     nav {
@@ -125,7 +125,8 @@ header h2 {
     
 
 	#primaryNav li a:hover {
-		background-color: rgba(0,0,0,.5);
+        background-color: $minorColor;
+        color: black;
 	}
 
 	#primaryNav.open {height: auto;}
@@ -170,13 +171,12 @@ main {
 }
 
 main h1 {
-    margin: 0px;
+    margin: $gutter;
     padding-top: 3.5rem;
+    color: $subColor;
 }
 
-main h2 {
-    color: $primaryColor;
-}
+
 
 
 
@@ -185,7 +185,7 @@ form.book fieldset {
     margin-bottom: 1rem;
     margin-left: 2%;
     margin-right: 2%;
-    border-color: #AD7E31;
+    border-color: $minorColor;
     border-radius: 10px;
   }
 
@@ -195,7 +195,7 @@ form.book legend {
  
 }
 form.book span {
-color: #1F69AD;
+color: $primaryColor;
 font-weight: 700;
 display: block;
 padding: .8rem 0 2px .2rem;
@@ -226,14 +226,14 @@ form.book .favorite {
 form.book .purchase { 
      font-size: 1rem;
      font-weight: 700;
-     background-color: #FFCD7A;
-     background: linear-gradient(to bottom, #FAE5C1 0%, #FFCD7A 100%);
+     background: linear-gradient(to bottom, #FAE5C1 0%, $subColor 100%);
      padding: .8rem;
      margin: 0 0 2% 2%;
-     border: solid 1px #AD7E31;
+     border: solid 1px $primaryColor;
      border-radius: .8rem;
      width: 15rem;
      box-shadow: 1px 1px 3px grey;
+     color: $primaryColor;
    }
 
 form.book .purchase:hover {
@@ -254,9 +254,9 @@ form.book .purchase:hover {
 
 
 footer {
-    background-color: $subColor;
+    background-color: $primaryColor;
     text-align: center;
     padding: 1rem $gutter; 
-    color: $primaryColor;
+    color: white;
 }
 

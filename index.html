@@ -31,106 +31,107 @@
             </button> 
 
             <ul id="primaryNav">
-                    <li><a href="#">New</a></li>
-                    <li class="active"><a href="#">Used</a></li>
-                    <li><a href="#">Sales</a></li>
-                        <li class="parent"><a href="#">Service</a>
-                            <ul>
-                                <li><a href="#">Oil Change</a></li>
-                                <li><a href="#">Front End Alignment</a></li>
-                            </ul>
-                        </li>
-                    <li><a href="#">Request an Appointment</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li class="active parent"><a href="#">Order</a>
+                        <ul>
+                            <li><a href="#">Chains</a></li>
+                            <li><a href="#">Lids</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reviews</a></li>
             </ul>
     </nav>
-
-
-   
-    <!--
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Locations</a></li>
-            <li class="active"><a href="index.html" class ="active">Our Story</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    -->
    
 
     <main class="clearfix">
-                    <h1>KING B's Dutchoven Cook Book</h1>
-                    <p class="tag">To Cook like the KING.., you need to have his full set of directions </p>
+                    <h1>Order</h1>
                     
                     <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="mail" class="book">
                         
                  <!-- Personal Information -->
                         
                         <fieldset>
-                            <legend>Personal Information</legend>
+                            <legend>Customer Information</legend>
                             <label>
                                 <span>Full Name</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
+
+                            <label>
+                                    <span>Phone Number</span><input type="tel" name="phone" placeholder="111-222-3333" pattern="[0-9-. ]{10,14}" class="info">
                             </label>
                             
                             <label>
                                 <span>Email Address</span><input type="email" name="email" placeholder="user@somewhere.com" required class="info">
                             </label>
                             
-                            <label>
-                                <span>Phone Number</span><input type="tel" name="phone" placeholder="111-222-3333" pattern="[0-9-. ]{10,14}" class="info">
-                            </label>
+                            
                             
                         
                         </fieldset>
                         
                         
-                <!-- Shipping & Billing Information -->
+                <!-- Swag Information -->
                         
                         <fieldset>
-                            <legend>Shipping & Billing Information</legend>
+                            <legend>Swag Information</legend>
                             <label>
-                                <span>Full Name</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                                <span>Date Needed</span><input type="text" name="name" placeholder="Jan 12 2020" required class="info">
                             </label>
                             
                             <label>
-                                <span>Shipping/Billing Address</span><input type="text" name="address" placeholder="Your Full Address" required class="info">
+                                <span>Business Name</span><input type="text" name="address" placeholder="Company Name" required class="info">
                             </label>
                             
+                            <label>
+                                <span>Business URL</span><input type="url" name="address" placeholder="100" required class="info">
+                            </label>
+
+                            <label>
+                                    <span>Color</span>
+                                    <select name="color" class="credit">
+                                        <option value="visa">Orange</option>
+                                        <option value="master">Blue</option>
+                                        <option value="discover">Gold</option>
+                                        <option value="american">Silver</option>
+                                    </select>
+                                </label>
+
+
+                                <span>Material </span>
+                                <label><input type="radio" name="option" value="yes"> Aluminum </label><br>
+                                <label><input type="radio" name="option" value="no"> Plastic </label>
+
                          
-                            <label>
-                                <span>Credit Card Type</span>
-                                <select name="creditcard" class="credit">
-                                    <option value="visa">Visa</option>
-                                    <option value="master">Mastercard</option>
-                                    <option value="discover">Discover Card</option>
-                                    <option value="american">American Express</option>
-                                </select>
-                            </label>
+                           
                         </fieldset>
                         
                         
                  <!-- Future Information -->
                         
                         <fieldset>
-                            <legend>Account Information</legend>
+                            <legend>Payment Information</legend>
+
+                            <label>
+                                    <span>Name on Card</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
+
+                            <label>
+                                    <span>Card Number</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
+
+                            <label>
+                                    <span>Expiration Date</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                            </label>
                             
-                            <span>Which information would you like to be notified about in the future?</span>
-                            <label><input type="checkbox" name="promotions" value="promotions" > Future Promotions </label><br>
-                            <label><input type="checkbox" name="videos" value="videos"> How to Videos </label><br>
-                            <label><input type="checkbox" name="recipes" value="recipes"> New Recipes </label>
-                            
-                            
-                            <span>Would you like this information to be sent to you by email? </span>
-                            <label><input type="radio" name="option" value="yes"> Yes </label><br>
-                            <label><input type="radio" name="option" value="no"> No </label>
-                            
-                            <label><span>What are some of your favorite dutchoven meals?</span><textarea  name="favorite" class="favorite"></textarea></label>
                 
                          </fieldset>
                         
-                        <input type="submit" value="Purchase Cook Book" class="purchase">
+                        <input type="submit" value="Order My Swag" class="purchase">
                         
-                        <input Type="hidden" name="subject" value="Cook Book Purchase">
+                        <input Type="hidden" name="subject" value="Swag Order">
                         
                         <input Type="hidden" name="redirect" value="thanks.html">
                     
