@@ -5,23 +5,24 @@
 
 nav {
     background-color: $primaryColor;
+}
 
-    ul {
+#primaryNav {
         margin: 0 0 0 2vw; 
         padding: 0;
-    }
+}
 
-    ul>li {
+ul>li {
         float: left; 
         list-style: none; 
         border-left: 1px solid rgba(0,0,0,0.2); 
-    }
+}
     
-    ul li:last-child{
+#primaryNav li:last-child{
       border-right: 1px solid rgba(0,0,0,0.2);
-    }
+}
 
-    ul li a { 
+#primaryNav li a { 
 		display: block;
 		background: none;
 		font-size: .9em;
@@ -30,42 +31,44 @@ nav {
 		text-decoration: none;
 		-webkit-transition: background 0.3s linear; 
 		transition: background 0.3s linear;
-    }
+}
+
+#primaryNav li a.active { 
+		background-color: $subColor;
+}
     
-    ul li a:hover {
+#primaryNav li a:hover {
      background: $minorColor;
      color: black;
-    }
+}
     
-    #primaryNav li.parent > a::before {
+#primaryNav li.parent > a::before {
         font-size: .75rem;
 		content: "\25BC";
 		color: rgba(255,255,255,.5);
-    }
+}
     
 
-    ul li ul {
+#primaryNav li ul {
 		z-index:998;
 		position: absolute;
 		background-color: darken($primaryColor, 3%);
 		left: -999em; 
 		width: 12em; 
-	}
- 	ul li ul li { 
+}
+    
+#primaryNav li ul li { 
         float: none;
         border: none;
 		border-top: solid 1px rgba(0,0,0,0.2); 
-	}
+}
     
 
-    ul li:hover ul { 
+u#primaryNav li:hover ul { 
 		left: auto;
 		margin-left: 0;
-    }
-    
-    
-	
 }
+    
 
 
 main h1 {

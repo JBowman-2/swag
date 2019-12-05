@@ -515,6 +515,9 @@ header h2 {
     padding: 0;
     margin: 0; }
 
+  #primaryNav li a.active {
+    background-color: #ff5241; }
+
   #primaryNav li ul a {
     padding-left: 20px; }
 
@@ -600,45 +603,61 @@ footer {
 
   nav {
     background-color: #5d1cb2; }
-    nav ul {
-      margin: 0 0 0 2vw;
-      padding: 0; }
-    nav ul > li {
-      float: left;
-      list-style: none;
-      border-left: 1px solid rgba(0, 0, 0, 0.2); }
-    nav ul li:last-child {
-      border-right: 1px solid rgba(0, 0, 0, 0.2); }
-    nav ul li a {
-      display: block;
-      background: none;
-      font-size: .9em;
-      padding: .9em .9em;
-      color: white;
-      text-decoration: none;
-      -webkit-transition: background 0.3s linear;
-      transition: background 0.3s linear; }
-    nav ul li a:hover {
-      background: #0eff81;
-      color: black; }
-    nav #primaryNav li.parent > a::before {
-      font-size: .75rem;
-      content: "\25BC";
-      color: rgba(255, 255, 255, 0.5); }
-    nav ul li ul {
-      z-index: 998;
-      position: absolute;
-      background-color: #561aa5;
-      left: -999em;
-      width: 12em; }
-    nav ul li ul li {
-      float: none;
-      border: none;
-      border-top: solid 1px rgba(0, 0, 0, 0.2); }
-    nav ul li:hover ul {
-      left: auto;
-      margin-left: 0; }
+
+  #primaryNav {
+    margin: 0 0 0 2vw;
+    padding: 0; }
+
+  ul > li {
+    float: left;
+    list-style: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.2); }
+
+  #primaryNav li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+  #primaryNav li a {
+    display: block;
+    background: none;
+    font-size: .9em;
+    padding: .9em .9em;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: background 0.3s linear;
+    transition: background 0.3s linear; }
+
+  #primaryNav li a.active {
+    background-color: #ff5241; }
+
+  #primaryNav li a:hover {
+    background: #0eff81;
+    color: black; }
+
+  #primaryNav li.parent > a::before {
+    font-size: .75rem;
+    content: "\25BC";
+    color: rgba(255, 255, 255, 0.5); }
+
+  #primaryNav li ul {
+    z-index: 998;
+    position: absolute;
+    background-color: #561aa5;
+    left: -999em;
+    width: 12em; }
+
+  #primaryNav li ul li {
+    float: none;
+    border: none;
+    border-top: solid 1px rgba(0, 0, 0, 0.2); }
+
+  u#primaryNav li:hover ul {
+    left: auto;
+    margin-left: 0; }
 
   main h1 {
     margin: 0px;
     padding: 2%; } }
+@media only screen and (min-width: 55rem) {
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto; } }
