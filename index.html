@@ -51,7 +51,7 @@
                     
                     <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="mail" class="book">
                         
-                 <!-- Personal Information -->
+                 <!-- Customer Information -->
                         
                         <fieldset>
                             <legend>Customer Information</legend>
@@ -60,11 +60,11 @@
                             </label>
 
                             <label>
-                                    <span>Phone Number</span><input type="tel" name="phone" placeholder="111-222-3333" pattern="[0-9-. ]{10,14}" class="info">
+                                <span>Phone Number</span><input type="text" name="phone" placeholder="111-222-3333" pattern="[0-9-. ]{10,14}" required class="info">
                             </label>
                             
                             <label>
-                                <span>Email Address</span><input type="email" name="email" placeholder="user@somewhere.com" required class="info">
+                                <span>Email Address</span><input type="email" name="email" placeholder="user@somewhere.com">
                             </label>
                             
                             
@@ -78,15 +78,15 @@
                         <fieldset>
                             <legend>Swag Information</legend>
                             <label>
-                                <span>Date Needed</span><input type="text" name="name" placeholder="Jan 12 2020" required class="info">
+                                <span>Date Needed</span><input type="text" name="date" placeholder="Jan 12 2020">
                             </label>
                             
                             <label>
-                                <span>Business Name</span><input type="text" name="address" placeholder="Company Name" required class="info">
+                                <span>Business Name</span><input type="text" name="name" placeholder="Company Name">
                             </label>
                             
                             <label>
-                                <span>Business URL</span><input type="url" name="address" placeholder="100" required class="info">
+                                <span>Business URL</span><input type="url" name="url" placeholder="100">
                             </label>
 
                             <label>
@@ -119,11 +119,11 @@
                             </label>
 
                             <label>
-                                    <span>Card Number</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                                    <span>Card Number</span><input type="number" name="cardnum" placeholder="0000111100001111" required class="info">
                             </label>
 
                             <label>
-                                    <span>Expiration Date</span><input type="text" name="name" placeholder="Your Full Name" required class="info">
+                                    <span>Expiration Date</span><input type="text" name="date" placeholder="03/20" required class="info">
                             </label>
                             
                 
