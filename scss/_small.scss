@@ -221,12 +221,7 @@ form.bling .color {
 
 }
 
-form.bling .favorite {
-     border-radius: .3rem;
-     padding: .4rem;
-     width: 40%;
-     height: 100px;
-   }
+
 
 form.bling .purchase { 
      font-size: 1rem;
@@ -236,7 +231,8 @@ form.bling .purchase {
      margin: 0 0 2% 2%;
      border: solid 1px $primaryColor;
      border-radius: .8rem;
-     width: 15rem;
+     width: 96%;
+     max-width: 20rem;
      box-shadow: 1px 1px 3px grey;
      color: $primaryColor;
    }
@@ -248,12 +244,29 @@ form.bling .purchase:hover {
 
 
 
-input:required {
-    border: 2px solid #800000;
+form.bling label.top input, form.bling select {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem; 
 }
 
-input:valid {
-    background-color: green;
+ label.mat {
+    display: block;
+    margin: .5rem 0;
+    color: #555;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px
 }
 
 

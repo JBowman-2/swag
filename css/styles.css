@@ -483,9 +483,6 @@ header h2 {
     font-family: Verdana;
     font-weight: normal; }
 
-  #primaryNav li.current-menu-item a {
-    background-color: rgba(0, 0, 0, 0.25); }
-
   #primaryNav li a {
     display: block;
     width: 100%;
@@ -559,16 +556,10 @@ form.bling .info {
   padding: .4rem;
   width: 40%; }
 
-form.bling .credit {
+form.bling .color {
   border-radius: .3rem;
-  width: 40%;
+  width: 25%;
   height: 25px; }
-
-form.bling .favorite {
-  border-radius: .3rem;
-  padding: .4rem;
-  width: 40%;
-  height: 100px; }
 
 form.bling .purchase {
   font-size: 1rem;
@@ -578,13 +569,35 @@ form.bling .purchase {
   margin: 0 0 2% 2%;
   border: solid 1px #5d1cb2;
   border-radius: .8rem;
-  width: 15rem;
+  width: 96%;
+  max-width: 20rem;
   box-shadow: 1px 1px 3px grey;
   color: #5d1cb2; }
 
 form.bling .purchase:hover {
   color: white;
   background: #1F69AD; }
+
+form.bling label.top input, form.bling select {
+  -webkit-appearance: none;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem; }
+
+label.mat {
+  display: block;
+  margin: .5rem 0;
+  color: #555; }
+
+form label.top input:required {
+  border-left: red solid 6px; }
+
+form label.top input:required:valid {
+  border-left: green solid 6px; }
 
 .clearfix:after {
   content: "";
@@ -660,4 +673,9 @@ footer {
 @media only screen and (min-width: 55rem) {
   header, nav, main, footer {
     max-width: 64rem;
-    margin: auto; } }
+    margin: auto; }
+
+  label.mat {
+    display: block;
+    margin: .2rem 0;
+    color: #555; } }
